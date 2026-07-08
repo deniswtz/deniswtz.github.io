@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deniz Gönce | Official Website</title>
 
-<title>Deniz Gönce | Resmi Kişisel Web Sitesi</title>
+<meta name="description" content="Official website of Deniz Gönce. Boxer, athlete, news, gallery and career.">
 
-<meta name="description" content="Deniz Gönce Resmi Kişisel Web Sitesi">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,86 +15,117 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
-background:#111;
+background:#0b0b0b;
 color:#fff;
 }
 
-header{
-
-padding:70px 20px;
-text-align:center;
-background:linear-gradient(135deg,#c40000,#111);
-
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(15px);
+z-index:999;
 }
 
-header img{
-
-width:180px;
-height:180px;
-border-radius:50%;
-border:5px solid white;
-object-fit:cover;
-
+nav h2{
+color:#e30000;
 }
 
-h1{
-
-margin-top:20px;
-font-size:42px;
-
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
 }
 
-h2{
-
-color:#d60000;
-margin-bottom:15px;
-
-}
-
-p{
-
-line-height:1.8;
-
-}
-
-.btn{
-
-display:inline-block;
-margin-top:20px;
-padding:14px 35px;
-background:#d60000;
-color:white;
+nav a{
 text-decoration:none;
-border-radius:40px;
+color:white;
+font-weight:600;
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url("profil.jpg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+}
+
+.hero p{
+
+margin-top:20px;
+font-size:22px;
+opacity:.9;
+
+}
+
+.button{
+
+margin-top:35px;
+display:inline-block;
+padding:15px 40px;
+background:#d50000;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:bold;
 
 }
 
 section{
 
-max-width:1000px;
-margin:auto;
-padding:60px 25px;
+padding:100px 10%;
 
 }
 
 .card{
 
-background:#1d1d1d;
-padding:25px;
-border-radius:15px;
-margin-bottom:25px;
+background:#181818;
+padding:35px;
+border-radius:18px;
+margin-bottom:30px;
+
+}
+
+h3{
+
+color:#d50000;
+margin-bottom:20px;
+font-size:34px;
 
 }
 
 footer{
 
-background:#000;
 padding:35px;
 text-align:center;
+background:#111;
 
 }
 
@@ -103,87 +135,36 @@ text-align:center;
 
 <body>
 
-<header>
+<nav>
 
-<img src="profil.jpg">
-
-<h1>Deniz Gönce</h1>
-
-<p>Zafer Partisi Konak İlçe Sosyal Medya Sorumlusu<br>
-Yönetim Kurulu Üyesi • AFAD Gönüllüsü</p>
-
-<a class="btn" href="#hakkimda">Hakkımda</a>
-
-</header>
-
-<section id="hakkimda">
-
-<div class="card">
-
-<h2>Deniz Gönce Kimdir?</h2>
-
-<p>
-
-Deniz Gönce, toplumsal çalışmalar ve sosyal medya iletişimi alanında faaliyet göstermektedir.
-
-Zafer Partisi Konak İlçe Başkanlığında Sosyal Medya Sorumlusu ve Yönetim Kurulu Üyesi olarak görev yapmakta olup gönüllülük faaliyetlerinde de yer almaktadır.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Ünvanlar</h2>
+<h2>DENİZ GÖNCE</h2>
 
 <ul>
 
-<li>Zafer Partisi Konak İlçe Sosyal Medya Sorumlusu</li>
+<li><a href="#about">Hakkımda</a></li>
 
-<li>Zafer Partisi Konak İlçe Yönetim Kurulu Üyesi</li>
+<li><a href="#career">Kariyer</a></li>
 
-<li>AFAD Gönüllüsü</li>
+<li><a href="#news">Haberler</a></li>
+
+<li><a href="#gallery">Galeri</a></li>
+
+<li><a href="#contact">İletişim</a></li>
 
 </ul>
 
-</div>
+</nav>
 
-<div class="card">
+<section class="hero">
 
-<h2>Basında</h2>
+<div>
 
-<p>
+<h1>DENİZ GÖNCE</h1>
 
-Yakında eklenecek.
+<p>Professional Boxer</p>
 
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>İletişim</h2>
-
-<p>
-
-Instagram<br>
-
-Facebook<br>
-
-X (Twitter)
-
-</p>
+<a href="#about" class="button">Daha Fazla</a>
 
 </div>
 
 </section>
-
-<footer>
-
-© 2026 Deniz Gönce
-
-</footer>
-
-</body>
-
-</html>
